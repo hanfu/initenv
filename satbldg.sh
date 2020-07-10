@@ -16,13 +16,6 @@
 
 # nvidia drive
 
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-aws configure set aws_access_key_id AKIAIR4P4OZNENS2I2VA
-aws configure set aws_secret_access_key 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
-aws configure set region ap-northeast-1
-
 PROJ_DIR=/content/satbldg
 git clone --recursive https://github.com/motokimura/spacenet_building_detection.git $PROJ_DIR
 cd satbldg/data
