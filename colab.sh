@@ -1,6 +1,8 @@
 echo 'subl'
 curl -o /usr/local/bin/subl https://raw.githubusercontent.com/aurora/rmate/master/rmate
 sudo chmod +x /usr/local/bin/subl
+echo 'nano'
+apt install nano
 echo 'ranger'
 apt install ranger
 echo 'screen'
