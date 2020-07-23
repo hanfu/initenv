@@ -9,12 +9,13 @@ echo 'screen'
 apt install screen
 echo 'jupyterlab'
 pip3 install jupyterlab
-echo 'pydrive'
+echo ''
 
 echo 'edit ~/.bashrc'
 echo "PS1='\u:\W\$ '" >> ~/.bashrc
 echo "export INITENV=/content/initenv" >> ~/.bashrc
 echo "export gitc='git -C /content/initenv'" >> ~/.bashrc
+echo "export bucket='s3://colab-freetier210722'" >> ~/.bashrc
 echo "run jupyterlab at port 8888"
 nohup jupyter lab --no-browser --ip 0.0.0.0 --port 8888 &
 # use jupyter notebook list, jobs, bg, fg to control
