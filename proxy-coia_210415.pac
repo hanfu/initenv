@@ -3,7 +3,10 @@
 */
 function FindProxyForURL(url, host) {
  var proxy = "PROXY atl1.coia.siemens.net:9400; PROXY atl2.coia.siemens.net:9400; PROXY sfo2.coia.siemens.net:9400";
-
+ 
+ if (shExpMatch(host, "siemens.cn")) { return "DIRECT"; }
+ 
+ 
  if (shExpMatch(host, "localhost")) { return "DIRECT"; }
  if (shExpMatch(host, "localhost.*")) { return "DIRECT"; }
  if (shExpMatch(host, "127.0.0.*")) { return "DIRECT"; }
